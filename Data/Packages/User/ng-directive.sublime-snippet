@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+app.directive('${1:name}', function(){
+	   return {
+		     restrict: 'E', 
+		     link: function(scope, element, attr){
+		     		${3}
+		     },
+		     //template: '<div>hello world!</div>', //自定义标签中的视图，dom
+		     templateUrl: '/html/${2:replace}.html',  //替换标签内容
+		     replace: true,                     //把自定义标签的名字进行替换
+		     scope: {                           //让自定义组件中的作用域互相的独立
+			       //tcolor: '=rt',  //=等于号代表了属性中的value值是
+			       //name: '@name'     //利用@符号，得到属性中的具体的，真正的value值。
+		     }
+	   };    
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>directive</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

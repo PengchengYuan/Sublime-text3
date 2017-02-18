@@ -1,0 +1,15 @@
+{
+	"color_inactive_tabs": true,
+	"color_scheme": "Packages/User/SublimeLinter/FireCode (SL).tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"sidebar_size_13": true,
+	"tabs_padding_small": true,
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
+	"update_check": false,
+	"word_wrap": true
+}

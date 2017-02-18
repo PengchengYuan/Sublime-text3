@@ -1,0 +1,34 @@
+{
+	"auto_upgrade": false,
+	"auto_upgrade_ignore":
+	[
+	],
+	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Babel",
+		"ColorPicker",
+		"Colorsublime",
+		"ConvertToUTF8",
+		"Default",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"IMESupport",
+		"LESS",
+		"Markdown Preview",
+		"Package Control",
+		"PyV8",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter-contrib-htmlhint",
+		"SyncedSidebarBg",
+		"Theme - Afterglow",
+		"ZZZ"
+	]
+}
