@@ -1,6 +1,9 @@
 {
 	"folder_history":
 	[
+		"/C/Program Files/feiq/Recv Files/瀑布流",
+		"/D/css3_html5/react/test7  发布与订阅",
+		"/D/css3_html5/react/test5",
 		"/D/css3_html5/react/test3",
 		"/D/1637TechFolder",
 		"/E/object/mryx",
@@ -1020,6 +1023,18 @@
 				"selected_items":
 				[
 					[
+						"new",
+						"newObj"
+					],
+					[
+						"get",
+						"getElementById〔function〕"
+					],
+					[
+						"for",
+						"for\tfor"
+					],
+					[
 						"fac",
 						"factory\tng-factory"
 					],
@@ -1078,10 +1093,6 @@
 					[
 						"l",
 						"log"
-					],
-					[
-						"get",
-						"getElementsByTagName〔function〕"
 					],
 					[
 						"ng-",
@@ -1522,49 +1533,11 @@
 					[
 						"tex-a",
 						"text-align"
-					],
-					[
-						"flex",
-						"flex-direction"
-					],
-					[
-						"font",
-						"font-size"
 					]
 				]
 			},
 			"buffers":
 			[
-				{
-					"file": "/D/css3_html5/react/test3/index.html",
-					"settings":
-					{
-						"buffer_size": 674,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/D/css3_html5/react/test3/js/myapp.js",
-					"settings":
-					{
-						"buffer_size": 3066,
-						"encoding": "UTF-8",
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "function store(nameSpace, data) {\n\tif(data) {\n\t\tlocalStorage.setItem(nameSpace, JSON.stringify(data));\n\t\treturn;\n\t}\n\treturn (nameSpace && JSON.parse(localStorage.getItem(nameSpace))) || null;\n}\nfunction Model(){\n\t//维护列表的映射关系表\n\tthis.todos = store('todolist') || {};\n}\nModel.fn = Model.prototype;   //减少代码冗余，加快工作效率\nModel.fn.addTodo=function (text){\n\tvar id = Date.now();\n\t//列表的初始化数据\n\tvar todo = {\n\t\tid: id,\n\t\tcompleted: false, \n\t\ttext: text\n\t};\n\tthis.todos[id] = todo;\n\tthis.update();\n};\nModel.fn.delete = function(id){\n\tdelete \tthis.todos[id];\t\n\tthis.update();\n};\nModel.fn.checkToggle = function(id){\n\tthis.todos[id].completed = \t!this.todos[id].completed; \n\tthis.update();\t\n};\nModel.fn.clearAll = function(){\n\tfor(var key in this.todos){\n\t\tif(this.todos[key].completed){\n\t\t\tdelete this.todos[key];\n\t\t}\n\t\tthis.update();\n\t}\t \t\n};\nModel.fn.clearAllFlag = function(){\n\tfor(var key in this.todos){\n\t\tif(this.todos[key].completed){\n\t\t\treturn 'block';\n\t\t}\n\t}\n\treturn 'none';\t \t\n};\nModel.fn.FootFlag = function(){\n\tfor(var key in this.todos){\n\t\treturn 'block';\n\t}\n\treturn 'none';\n};\nModel.fn.toggleAll = function(checked){\n\tfor(var key in this.todos){\n\t\tif(this.todos[key].completed !== checked){\n\t\t\tthis.todos[key].completed = checked;\n\t\t}\n\t}\n\tthis.update();\n};\nModel.fn.allCheck = function(checked){\n\tvar flag = false;\n\tfor(var key in this.todos){\n\t\tflag = true;\n\t}\n\tfor(var key in this.todos){\n\t\tif(!this.todos[key].completed){\n\t\t\treturn false;\n\t\t}\n\t}\n\treturn flag;\n};\nModel.fn.noCheckCount = function(checked){\n\tvar count = 0;\n\tfor(var key in this.todos){\n\t\tif(!this.todos[key].completed){\n\t\t\tcount ++;\n\t\t}\n\t}\n\treturn count;\n};\nModel.fn.updateView = function(callback){\n\tvar that = this;\n\tthis.update = function(){\n\t\tcallback();\n\t\tstore('todolist',that.todos);\t \t\n\t};\t \t\n};\nvar model = new Model();",
-					"file": "/D/css3_html5/react/test3/js/model.js",
-					"file_size": 1914,
-					"file_write_time": 131318640869809379,
-					"settings":
-					{
-						"buffer_size": 1794,
-						"line_ending": "Windows",
-						"scratch": true
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -1690,35 +1663,104 @@
 			},
 			"expanded_folders":
 			[
-				"/D/1637TechFolder",
-				"/D/1637TechFolder/React",
-				"/D/1637TechFolder/React/reactStudy",
-				"/D/1637TechFolder/React/reactStudy/finishProject",
-				"/D/css3_html5/react/test3",
-				"/D/css3_html5/react/test3/css",
-				"/D/css3_html5/react/test3/js",
-				"/D/css3_html5/react/test3/node_modules"
+				"/D/css3_html5",
+				"/D/css3_html5/react",
+				"/D/css3_html5/react/test5",
+				"/D/css3_html5/react/test5/css",
+				"/D/css3_html5/react/test5/js",
+				"/D/css3_html5/react/test5/js/moudles"
 			],
 			"file_history":
 			[
-				"/E/object/model/webpack.config.js",
-				"/E/object/model/gulpfile.js",
-				"/E/软件/node/gulp/gulpfile.js",
-				"/E/object/model/package.json",
-				"/F/model/package.json",
-				"/E/软件/node/gulp/package.json",
-				"/E/软件/node/webpack/webpack.config.js",
+				"/D/css3_html5/react/test5/js/moudles/FooterNav.js",
+				"/D/css3_html5/react/test5/css/app.css",
+				"/D/css3_html5/react/test5/index.html",
+				"/D/css3_html5/react/test5/webpack.config.js",
+				"/D/css3_html5/react/test5/package.json",
+				"/D/css3_html5/react/test7  发布与订阅/package.json",
+				"/D/css3_html5/react/test7  发布与订阅/webpack.config.js",
+				"/D/css3_html5/react/test7  发布与订阅/gulpfile.js",
+				"/D/css3_html5/webpack/package.json",
+				"/E/object/mryx/js/widget/footlist.js",
 				"/E/软件/node/webpack/package.json",
+				"/E/object/model/gulpfile.js",
+				"/E/object/model/package.json",
+				"/F/Angular/mryx/js/widget/good.js",
+				"/E/object/mryx/js/widget/good.js",
+				"/D/css3_html5/react/test7  发布与订阅/less/index.less",
+				"/D/css3_html5/react/test7  发布与订阅/index.html",
+				"/D/css3_html5/react/test7  发布与订阅/js/entry/entry.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/model/subcribe.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/bundle.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/tool/pubsub.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/model/factory.js",
+				"/D/css3_html5/react/test7  发布与订阅/css/scss/index.css",
+				"/C/Program Files/feiq/Recv Files/瀑布流/瀑布流（jquery）.html",
+				"/D/css3_html5/react/test7  发布与订阅/data/json.json",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ajaxjq.sublime-snippet",
+				"/D/css3_html5/react/test7  发布与订阅/css/bundle.css",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/if.sublime-snippet",
+				"/D/css3_html5/react/test7  发布与订阅/css/scss/reset.css",
+				"/E/object/waimai/css/index.css",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/fgx.sublime-snippet",
+				"/D/css3_html5/react/test7  发布与订阅/js/model/moudle1.js",
+				"/D/css3_html5/react/test7  发布与订阅/css/scss/myless.css",
+				"/E/object/model/webpack.config.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/entry.js",
+				"/D/css3_html5/react/test7  发布与订阅/js/all.js",
+				"/E/软件/node/webpack/webpack.config.js",
+				"/D/1637TechFolder/React/react-high-program/pubsub.js",
+				"/D/1637TechFolder/设计模式/pubsub.js",
+				"/E/软件/node/gulp/package.json",
+				"/D/css3_html5/react/test6  观察者模式/observer-model.html",
+				"/D/css3_html5/react/test6  观察者模式/observer.js",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/for.sublime-snippet",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/name-function.sublime-snippet",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/forin.sublime-snippet",
+				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/annoyous-function.sublime-snippet",
+				"/D/css3_html5/react/test6  观察者模式/ionic.css",
+				"/E/object/meilishuo/meilishuo/js/index.js",
+				"/E/object/meilishuo/meilishuo/js/pay.js",
+				"/D/css3_html5/react/test5/js/entry/model.js",
+				"/D/css3_html5/react/test5/js/moudles/ItemBar.js",
+				"/D/css3_html5/react/test5/js/moudles/HeaderBar.js",
+				"/D/css3_html5/react/test5/js/moudles/Container.js",
+				"/C/Users/Administrator.PC-20160724FCXS/Desktop/111.js",
+				"/D/css3_html5/react/test5/js/entry/entry.js",
+				"/D/1637TechFolder/React/react-high-program/components/Container.js",
+				"/D/1637TechFolder/React/react-high-program/app.js",
+				"/D/1637TechFolder/React/react-high-program/components/List.js",
+				"/D/1637TechFolder/React/react-high-program/components/ItemBar.js",
+				"/D/1637TechFolder/React/react-high-program/components/HeaderBar.js",
+				"/D/1637TechFolder/React/react-high-program/components/FooterNav.js",
+				"/D/css3_html5/react/test4/js/moudles/moudle1.js",
+				"/D/1637TechFolder/React/react-high-program/components/Person.js",
+				"/D/css3_html5/react/test5/js/moudles/moudle1.js",
+				"/D/css3_html5/react/test5/js/moudles/myapp.js",
+				"/D/css3_html5/react/test5/js/index.js",
+				"/D/css3_html5/react/test5/js/model.js",
+				"/D/css3_html5/react/test4/package.json",
+				"/D/css3_html5/react/test3/js/model.js",
+				"/D/css3_html5/react/test4/webpack.config.js",
+				"/D/1637TechFolder/React/react-high-program/webpack.config.js",
+				"/E/object/model/js/entry.js",
+				"/E/object/model/less/myless.less",
+				"/E/object/model/css/scss/index.css",
+				"/E/object/model/css/bundle.css",
+				"/E/object/model/less/index.less",
+				"/D/css3_html5/react/test3/js/myapp.js",
+				"/E/object/model/js/moudles/moudle1.js",
+				"/D/css3_html5/react/test3/index.html",
+				"/E/object/model/js/all.js",
+				"/E/object/model/js/index.js",
+				"/E/软件/node/gulp/gulpfile.js",
+				"/F/model/package.json",
 				"/D/1637TechFolder/React/reactStudy/finishProject/model.js",
 				"/C/Users/Administrator.PC-20160724FCXS/Desktop/测试/123.js",
-				"/C/Users/Administrator.PC-20160724FCXS/Desktop/111.js",
 				"/D/css3_html5/react/test3/js/app.js",
-				"/D/css3_html5/react/test3/js/model.js",
 				"/C/Users/Administrator.PC-20160724FCXS/Desktop/123.js",
 				"/D/css3_html5/react/test3/package.json",
 				"/C/Users/Administrator.PC-20160724FCXS/Desktop/123 .html",
-				"/E/object/model/less/myless.less",
-				"/E/object/model/less/index.less",
 				"/E/object/model/index.less",
 				"/E/object/model/myless.less",
 				"/E/object/model/css/all.css",
@@ -1757,78 +1799,7 @@
 				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-directive.sublime-snippet",
 				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-controller.sublime-snippet",
 				"/E/object/mryx/js/factory.js",
-				"/E/object/mryx/js/controllers/homeCtrl.js",
-				"/E/object/mryx/html/model/cart.html",
-				"/E/object/mryx/js/widget/good.js",
-				"/E/object/mryx/html/widget/good.html",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-app.sublime-snippet",
-				"/E/object/mryx/js/controllers/cartCtrl.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-factory.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-http-get.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-http-post.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-watch.sublime-snippet",
-				"/E/object/mryx/html/model/home.html",
-				"/E/object/mryx/index.html",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/services/listService.js",
-				"/E/object/mryx/css/index.css",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/controllers/cartCtrl.js",
-				"/D/1637TechFolder/Angularjs/fruitApp/view/cart.html",
-				"/E/object/mryx/js/enter.js",
-				"/E/object/mryx/js/widget/footlist.js",
-				"/E/object/mryx/html/widget/footlist.html",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/console.log.sublime-snippet",
-				"/D/1637TechFolder/Angularjs/fruitApp/index.html",
-				"/E/object/mryx/html/home.html",
-				"/C/Users/Administrator.PC-20160724FCXS/Desktop/123.html",
-				"/E/object/mryx/js/controllers/singleCart.js",
-				"/E/object/mryx/html/singleCart.html",
-				"/D/1637TechFolder/Angularjs/fruitApp/view/home.html",
-				"/E/object/mryx/html/cart.html",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/directive/singleCart.js",
-				"/E/object/mryx/js/controllers/footlist.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/annoyous-function.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/name-function.sublime-snippet",
-				"/E/object/mryx/html/footlist.html",
-				"/E/object/mryx/js/controllers/addressCtrl.js",
-				"/E/object/mryx/js/controllers/tablist.js",
-				"/E/object/mryx/js/controllers/redBagCtrl.js",
-				"/E/object/mryx/js/controllers/brandCtrl.js",
-				"/E/object/mryx/html/brand.html",
-				"/E/object/mryx/html/redBag.html",
-				"/E/object/mryx/html/replace.html",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/directive/tablist.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-route-config.sublime-snippet",
-				"/E/object/mryx/js/lib/ionic.css",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/app.js",
-				"/E/object/mryx/js/controllers/infoCtrl.js",
-				"/D/1637TechFolder/Angularjs/fruitApp/js/controllers/addressCtrl.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng-route-when.sublime-snippet",
-				"/E/object/mryx/js/controller/tablist.js",
-				"/D/1637TechFolder/Angularjs/fruitApp/view/info.html",
-				"/E/object/mryx/html/info.html",
-				"/E/object/mryx/html/address.html",
-				"/E/object/mryx/js/controller/cartCtrl.js",
-				"/E/object/mryx/js/controller/infoCtrl.js",
-				"/E/object/mryx/js/controller/homeCtrl.js",
-				"/E/object/mryx/js/lib/angular-route.js",
-				"/D/1637TechFolder/Angularjs/recipes-with-angular-js-examples/chapter4/recipe1/index.html",
-				"/E/object/mryx/gulpfile.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ng.sublime-snippet",
-				"/E/object/mryx/myless.less",
-				"/E/object/mryx/js/index.js",
-				"/E/object/mryx/js/all.js",
-				"/E/object/mryx/js/moudles/moudle1.js",
-				"/C/Users/Administrator.PC-20160724FCXS/Desktop/笔记.txt",
-				"/D/1637TechFolder/Angularjs/readme.js",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/filter.sublime-snippet",
-				"/D/1637TechFolder/Angularjs/recipes-with-angular-js-examples/chapter7/recipe8/js/angular-resource.js",
-				"/D/css3_html5/angular/2.4过滤器/filter.html",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/deng.sublime-snippet",
-				"/D/1637TechFolder/Angularjs/recipes-with-angular-js-examples/README.md",
-				"/D/1637TechFolder/Angularjs/recipes-with-angular-js-examples/chapter2/recipe1/index.html",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/ifIE.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/sssssssssssssssssssssssssss.sublime-snippet",
-				"/D/Program Files (x86)/Sublime Text 3.3126x64/Data/Packages/User/console.sublime-snippet"
+				"/E/object/mryx/js/controllers/homeCtrl.js"
 			],
 			"find":
 			{
@@ -1847,6 +1818,11 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"img10",
+					"jpg",
+					"<.+>",
+					"<.>",
+					"jpg",
 					"list",
 					"fo",
 					"html",
@@ -1953,10 +1929,10 @@
 					"color: #000;",
 					"id"
 				],
-				"highlight": true,
+				"highlight": false,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
 					"200px",
@@ -1969,7 +1945,7 @@
 				"show_context": true,
 				"use_buffer2": false,
 				"whole_word": false,
-				"wrap": true
+				"wrap": false
 			},
 			"folders":
 			[
@@ -1980,111 +1956,17 @@
 					"path": "D:\\1637TechFolder"
 				},
 				{
-					"path": "D:\\css3_html5\\react\\test3"
+					"path": "D:\\css3_html5\\react\\test7  发布与订阅"
+				},
+				{
+					"path": "C:\\Program Files\\feiq\\Recv Files\\瀑布流"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 2,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/D/css3_html5/react/test3/index.html",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 674,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										674,
-										674
-									]
-								],
-								"settings":
-								{
-									"auto_complete": false,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"syntax": "Packages/HTML/HTML.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/D/css3_html5/react/test3/js/myapp.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3066,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1517,
-										1517
-									]
-								],
-								"settings":
-								{
-									"auto_complete": false,
-									"origin_encoding": "UTF-8",
-									"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 1020.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/D/css3_html5/react/test3/js/model.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1794,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1603,
-										1603
-									]
-								],
-								"settings":
-								{
-									"auto_complete": false,
-									"in_converting": true,
-									"origin_encoding": "GBK",
-									"revert_to_scratch": true,
-									"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 140.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -2124,7 +2006,7 @@
 				"height": 132.0
 			},
 			"pinned_build_system": "",
-			"position": "0,2,3,-32000,-32000,-1,-1,944,213,392,1041",
+			"position": "0,2,3,-32000,-32000,-1,-1,618,-44,66,784",
 			"project": "",
 			"replace":
 			{
@@ -2166,7 +2048,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 258.0,
+			"side_bar_width": 254.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
